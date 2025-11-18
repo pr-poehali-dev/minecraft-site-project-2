@@ -36,7 +36,7 @@ const Index = () => {
               <div className="w-12 h-12 bg-minecraft-grass pixel-corners flex items-center justify-center text-2xl">
                 ⛏️
               </div>
-              <h1 className="text-2xl font-black text-white text-shadow-pixel">MINECRAFT SERVER</h1>
+              <h1 className="text-2xl font-black text-white text-shadow-pixel">ALFATIME</h1>
             </div>
             <div className="flex gap-2">
               <Button 
@@ -123,7 +123,7 @@ const Index = () => {
                   <CardTitle className="text-2xl font-black">Версия</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-5xl font-black text-minecraft-gold mb-2">1.20.1</div>
+                  <div className="text-5xl font-black text-minecraft-gold mb-2">1.16.5</div>
                   <p className="text-muted-foreground font-semibold">Java Edition</p>
                 </CardContent>
               </Card>
@@ -472,7 +472,7 @@ const Index = () => {
             <div className="w-10 h-10 bg-minecraft-grass pixel-corners flex items-center justify-center text-xl">
               ⛏️
             </div>
-            <h3 className="text-xl font-black">MINECRAFT SERVER 2024</h3>
+            <h3 className="text-xl font-black">ALFATIME 2024</h3>
           </div>
           <p className="font-semibold opacity-90">Лучший сервер для твоих приключений</p>
         </div>
