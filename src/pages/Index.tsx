@@ -28,7 +28,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-cover bg-center bg-fixed" style={{backgroundImage: 'url(https://cdn.poehali.dev/projects/cc8de8fd-e172-44c2-8381-061715d8c222/files/0ec9c1d5-fa7a-4c6b-8446-6039c5da237d.jpg)'}}>
       <nav className="bg-black/60 backdrop-blur-lg border-b-4 border-white/10 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
@@ -110,7 +110,7 @@ const Index = () => {
                   <CardTitle className="text-2xl font-black">Онлайн игроков</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-5xl font-black text-minecraft-grass mb-2">247</div>
+                  <div className="text-5xl font-black text-minecraft-grass mb-2">3</div>
                   <p className="text-muted-foreground font-semibold">из 500 слотов</p>
                 </CardContent>
               </Card>
@@ -156,7 +156,7 @@ const Index = () => {
                     <h3 className="font-black text-3xl mb-2 text-center text-red-500">АНАРХИЯ</h3>
                     <p className="text-center text-white/80 font-semibold mb-4">Полная свобода действий. Без правил. Выживай как сможешь.</p>
                     <div className="text-center">
-                      <Badge className="pixel-corners bg-red-500 text-white text-lg px-4 py-2">247 игроков онлайн</Badge>
+                      <Badge className="pixel-corners bg-red-500 text-white text-lg px-4 py-2">3 игрока онлайн</Badge>
                     </div>
                   </div>
                 </div>
