@@ -28,8 +28,8 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-sky-400 via-sky-300 to-green-200">
-      <nav className="bg-secondary/95 backdrop-blur-sm border-b-4 border-secondary-foreground/20 sticky top-0 z-50">
+    <div className="min-h-screen bg-black">
+      <nav className="bg-black/60 backdrop-blur-lg border-b-4 border-white/10 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -87,7 +87,7 @@ const Index = () => {
                 backgroundPosition: 'center'
               }}
             >
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col items-center justify-center text-white">
+              <div className="absolute inset-0 bg-black/70 backdrop-blur-sm flex flex-col items-center justify-center text-white">
                 <h2 className="text-6xl font-black mb-4 text-shadow-pixel animate-float">
                   ДОБРО ПОЖАЛОВАТЬ
                 </h2>
@@ -102,7 +102,7 @@ const Index = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Card className="pixel-corners border-4 border-minecraft-stone/30 bg-white/95 hover:scale-105 transition-transform">
+              <Card className="pixel-corners border-4 border-white/20 bg-black/40 backdrop-blur-md hover:scale-105 transition-transform text-white">
                 <CardHeader>
                   <div className="w-16 h-16 bg-minecraft-grass pixel-corners mb-4 flex items-center justify-center text-3xl">
                     👥
@@ -115,7 +115,7 @@ const Index = () => {
                 </CardContent>
               </Card>
 
-              <Card className="pixel-corners border-4 border-minecraft-gold/30 bg-white/95 hover:scale-105 transition-transform">
+              <Card className="pixel-corners border-4 border-white/20 bg-black/40 backdrop-blur-md hover:scale-105 transition-transform text-white">
                 <CardHeader>
                   <div className="w-16 h-16 bg-minecraft-gold pixel-corners mb-4 flex items-center justify-center text-3xl animate-glow">
                     ⭐
@@ -128,7 +128,7 @@ const Index = () => {
                 </CardContent>
               </Card>
 
-              <Card className="pixel-corners border-4 border-minecraft-diamond/30 bg-white/95 hover:scale-105 transition-transform">
+              <Card className="pixel-corners border-4 border-white/20 bg-black/40 backdrop-blur-md hover:scale-105 transition-transform text-white">
                 <CardHeader>
                   <div className="w-16 h-16 bg-minecraft-diamond pixel-corners mb-4 flex items-center justify-center text-3xl">
                     🌍
@@ -145,24 +145,20 @@ const Index = () => {
               </Card>
             </div>
 
-            <Card className="pixel-corners border-4 border-primary/30 bg-white/95">
+            <Card className="pixel-corners border-4 border-white/20 bg-black/40 backdrop-blur-md text-white">
               <CardHeader>
-                <CardTitle className="text-3xl font-black">🎮 Игровые режимы</CardTitle>
+                <CardTitle className="text-3xl font-black">🎮 Игровой режим</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                  {[
-                    { name: 'Выживание', icon: '⚔️', players: 156 },
-                    { name: 'Креатив', icon: '🎨', players: 42 },
-                    { name: 'Скайблок', icon: '☁️', players: 31 },
-                    { name: 'Мини-игры', icon: '🎯', players: 18 },
-                  ].map((mode) => (
-                    <div key={mode.name} className="p-4 bg-muted pixel-corners hover:bg-primary/10 transition-colors cursor-pointer">
-                      <div className="text-4xl mb-2">{mode.icon}</div>
-                      <h3 className="font-black text-lg mb-1">{mode.name}</h3>
-                      <Badge className="pixel-corners">{mode.players} игроков</Badge>
+                <div className="flex justify-center">
+                  <div className="p-8 bg-red-900/20 pixel-corners border-2 border-red-500/50 hover:bg-red-900/30 transition-colors cursor-pointer max-w-md w-full">
+                    <div className="text-6xl mb-4 text-center">⚔️</div>
+                    <h3 className="font-black text-3xl mb-2 text-center text-red-500">АНАРХИЯ</h3>
+                    <p className="text-center text-white/80 font-semibold mb-4">Полная свобода действий. Без правил. Выживай как сможешь.</p>
+                    <div className="text-center">
+                      <Badge className="pixel-corners bg-red-500 text-white text-lg px-4 py-2">247 игроков онлайн</Badge>
                     </div>
-                  ))}
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -172,8 +168,8 @@ const Index = () => {
         {activeTab === 'donate' && (
           <div className="space-y-8">
             <div className="text-center mb-8">
-              <h2 className="text-5xl font-black mb-4 text-shadow-pixel text-foreground">💎 ПРИВИЛЕГИИ</h2>
-              <p className="text-xl font-semibold text-muted-foreground">Автоматическая выдача после оплаты</p>
+              <h2 className="text-5xl font-black mb-4 text-shadow-pixel text-white">💎 ПРИВИЛЕГИИ</h2>
+              <p className="text-xl font-semibold text-white/70">Автоматическая выдача после оплаты</p>
             </div>
 
             <div className="max-w-md mx-auto mb-8">
@@ -194,7 +190,7 @@ const Index = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Card className="pixel-corners border-4 border-minecraft-emerald/50 bg-gradient-to-br from-green-50 to-emerald-50 hover:scale-105 transition-transform">
+              <Card className="pixel-corners border-4 border-minecraft-emerald/50 bg-black/40 backdrop-blur-md hover:scale-105 transition-transform text-white">
                 <CardHeader>
                   <div className="w-20 h-20 bg-minecraft-emerald pixel-corners mx-auto mb-4 flex items-center justify-center text-4xl animate-float">
                     🟢
@@ -234,7 +230,7 @@ const Index = () => {
                 </CardContent>
               </Card>
 
-              <Card className="pixel-corners border-4 border-minecraft-gold/50 bg-gradient-to-br from-yellow-50 to-amber-50 hover:scale-105 transition-transform relative">
+              <Card className="pixel-corners border-4 border-minecraft-gold/50 bg-black/40 backdrop-blur-md hover:scale-105 transition-transform relative text-white">
                 <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 pixel-corners bg-minecraft-redstone font-black">
                   ПОПУЛЯРНО
                 </Badge>
@@ -281,7 +277,7 @@ const Index = () => {
                 </CardContent>
               </Card>
 
-              <Card className="pixel-corners border-4 border-minecraft-diamond/50 bg-gradient-to-br from-blue-50 to-cyan-50 hover:scale-105 transition-transform">
+              <Card className="pixel-corners border-4 border-minecraft-diamond/50 bg-black/40 backdrop-blur-md hover:scale-105 transition-transform text-white">
                 <CardHeader>
                   <div className="w-20 h-20 bg-minecraft-diamond pixel-corners mx-auto mb-4 flex items-center justify-center text-4xl animate-float">
                     💎
